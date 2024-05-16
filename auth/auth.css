@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #91C8E4;
+}
+
+/* login page */
+.main-container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    width: 90%;
+}
+
+.heading {
+    color: #2C4E80;
+    padding: 10px 0;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-size: 18px;
+    height: 65px;
+    background-color: #f7f7f7;
+}
+.buttom {
+    border-radius: 0 0 5px 5px;
+    height: 50px;
+    background-color: #f7f7f7;
+}
+
+.input {
+    padding: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.check-box,
+.btns {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.btns {
+    justify-content: space-between;
+}
+
+.forget-pass a {
+    text-decoration: none;
+    font-size: 14px
+}
+
+button[type="submit"] {
+    width: 100px;
+    padding: 10px;
+font-size: 15px;
+    background-color: #749BC2;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    transition: ease-in 100ms;
+    background-color: #4682A9;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4682A9;
+    text-align: center;
+    color: #fff;
+}
+.footer-right a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+}
