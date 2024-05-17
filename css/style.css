@@ -4,10 +4,94 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    height: 100%;
+    width: 100%;
+}
+
+/* -----------------------------------top-nab-bar------------------------------------ */
+.navs a{
+    text-decoration: none;
+    color: #092770;
+}
+#top-nav {
+    display: flex;
+    padding: 6px 100px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ecf0f5;
+}
+
+.top-nav-btns {
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.menu-social {
+    font-size: 20px;
+}
+
+#right-button button {
+    background-color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+button:hover {
+    transition: all ease 500ms;
+    transform: translate(2%, 2%);
+    text-decoration: underline;
+}
+
+/* --------------------------mid-nav-bar----------------------------- */
+#mid-nav {
+    display: flex;
+    padding: 10px 80px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+#mid-logo {
+    text-align: center;
+    color: #f90026;
+}
+
+#last-logo,
+#fist-logo {
+    width: 250px;
+}
+
+#last-logo img,
+#first-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* -------------------------bottom-nav---------------------- */
+#bottom-nav {
+    padding: 10px 120px;
+    background-color: #092770;
+    top: 0;
+    position: sticky;
+   
+}
+.ri-home-3-line{
+    font-size: 25px;
+    font-weight: 500;
+}
+#menus{
+    display: flex;
+    align-items: center;
+    gap: 5vh;
+}
+#menus a{
+    color: #ffffff;
+    text-decoration: none;
 }
