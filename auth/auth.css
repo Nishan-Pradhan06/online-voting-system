@@ -33,6 +33,7 @@ body {
     height: 65px;
     background-color: #f7f7f7;
 }
+
 .buttom {
     border-radius: 0 0 5px 5px;
     height: 50px;
@@ -43,14 +44,21 @@ body {
     padding: 20px;
 }
 
-input[type="email"],
-input[type="password"] {
+input[type="tel"],
+input[type="password"],
+input[type="number"] {
 
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+/*  it disble the increment and decrement button from input number type */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .check-box,
@@ -76,7 +84,7 @@ input[type="checkbox"] {
 button[type="submit"] {
     width: 100px;
     padding: 10px;
-font-size: 15px;
+    font-size: 15px;
     background-color: #749BC2;
     border: none;
     border-radius: 5px;
@@ -88,6 +96,7 @@ button[type="submit"]:hover {
     transition: ease-in 100ms;
     background-color: #4682A9;
 }
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -100,7 +109,8 @@ footer {
     text-align: center;
     color: #fff;
 }
-.footer-right a{
+
+.footer-right a {
     color: #fff;
     text-decoration: none;
     padding: 10px;
