@@ -92,6 +92,35 @@ body {
     gap: 5vh;
 }
 #menus a{
+    padding: 10px 20x;
     color: #ffffff;
     text-decoration: none;
 }
+#menus a {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+#menus a h4::after,
+.ri-home-3-line::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+#menus a:hover h4::after,
+#menus a:hover .ri-home-3-line::after,
+.ri-home-3-line:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+/* --------------------------------------scroll--------------------------------- */
