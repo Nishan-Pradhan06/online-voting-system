@@ -13,10 +13,11 @@ body {
 }
 
 /* -----------------------------------top-nab-bar------------------------------------ */
-.navs a{
+.navs a {
     text-decoration: none;
     color: #092770;
 }
+
 #top-nav {
     display: flex;
     padding: 6px 100px;
@@ -76,26 +77,30 @@ body {
 
 /* -------------------------bottom-nav---------------------- */
 #bottom-nav {
-    padding: 10px 120px;
+    padding: 10px 180px;
     background-color: #092770;
     top: 0;
     position: sticky;
-   
+
 }
-.ri-home-3-line{
+
+.ri-home-3-line {
     font-size: 25px;
     font-weight: 500;
 }
-#menus{
+
+#menus {
     display: flex;
     align-items: center;
     gap: 5vh;
 }
-#menus a{
+
+#menus a {
     padding: 10px 20x;
     color: #ffffff;
     text-decoration: none;
 }
+
 #menus a {
     position: relative;
     color: #ffffff;
@@ -123,4 +128,47 @@ body {
     width: 100%;
 }
 
-/* --------------------------------------scroll--------------------------------- */
+/* --------------------------------------scroll marquee--------------------------------- */
+
+.news-container {
+    color: #ffffff  ;
+}
+
+.news-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f90026;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 15px;
+    margin-right: 3px;
+}
+
+.news-marquee {
+    flex: 1;
+    overflow: hidden;
+}
+
+marquee {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+marquee a {
+    color: #111111;
+    padding: 4px 20px;
+    text-decoration: none;
+}
+marquee a:hover{
+    transition: all ease-in 700ms;
+    text-decoration: underline;
+}

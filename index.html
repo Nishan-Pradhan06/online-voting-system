@@ -1,83 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>मतदान</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>मतदान</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+            rel="stylesheet" />
+    </head>
 
-<body>
-    <div id="wrapper">
-        <div id="navs-container">
-            <!-- ------------top-button-navbar----------- -->
-            <div id="top-nav" class="navs">
-                <div id="left-button">
-                    <a href="https://facebook.com"><button class="top-nav-btns"><i
-                                class="ri-facebook-fill menu-social"></i></button>
-                    </a>
-                    <a href="https://facebook.com"><button class="top-nav-btns"><i
-                                class="ri-twitter-x-fill menu-social"></i></button>
-                    </a>
+    <body>
+        <div id="wrapper">
+            <div id="navs-container">
+                <!-- ------------top-button-navbar----------- -->
+                <div id="top-nav" class="navs">
+                    <div id="left-button">
+                        <a href="https://facebook.com"><button
+                                class="top-nav-btns"><i
+                                    class="ri-facebook-fill menu-social"></i></button>
+                        </a>
+                        <a href="https://facebook.com"><button
+                                class="top-nav-btns"><i
+                                    class="ri-twitter-x-fill menu-social"></i></button>
+                        </a>
+                    </div>
+                    <div id="right-button">
+                        <a href="./auth/signup.html"><button
+                                class="top-nav-btns">Register</button></a>
+                        <a href="./auth/login.html"><button
+                                class="top-nav-btns">Login</button></a>
+                    </div>
                 </div>
-                <div id="right-button">
-                    <a href="./auth/signup.html"><button class="top-nav-btns">Register</button></a>
-                    <a href="./auth/login.html"><button class="top-nav-btns">Login</button></a>
+                <!-- -------------mid-nab-bar-logo-------------- -->
+                <div id="mid-nav" class="navs">
+                    <div id="logo-left">
+                        <img src="./assets/logo.o.png" alt="logo-nepal">
+                    </div>
+                    <div id="mid-logo">
+                        <h1>निर्वाचन आयोग नेपाल</h1>
+                        <p style="color: black;">कान्तिपथ, काठमाण्डौ</p>
+                    </div>
+                    <div id="last-logo">
+                        <img src="./assets/logo-ele.png"
+                            alt="logo-election-nepal">
+                    </div>
+                </div>
+                <!-- --------------bottom-menu-nav-bar-------------- -->
+                <div id="bottom-nav" class="navs">
+                    <div id="menus">
+                        <a href="./index.html"><i
+                                class="ri-home-3-line"></i></a>
+                        <a href="#">
+                            <h4>हाम्रो बारे</h4>
+                        </a>
+                        <a href="#">
+                            <h4>निर्वाचन कानून</h4>
+                        </a>
+                        <a href="#">
+                            <h4>प्रकाशन</h4>
+                        </a>
+                        <a href="#">
+                            <h4>पछिल्लो निर्वाचनहरु</h4>
+                        </a>
+                        <a href="#">
+                            <h4>उम्मेदवारको बारे</h4>
+                        </a>
+                        <a href="#">
+                            <h4>उपनिर्वाचन, २०८१</h4>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <!-- -------------mid-nab-bar-logo-------------- -->
-            <div id="mid-nav" class="navs">
-                <div id="logo-left">
-                    <img src="./assets/logo.o.png" alt="logo-nepal">
-                </div>
-                <div id="mid-logo">
-                    <h1>निर्वाचन आयोग नेपाल</h1>
-                    <p style="color: black;">कान्तिपथ, काठमाण्डौ</p>
-                </div>
-                <div id="last-logo">
-                    <img src="./assets/logo-ele.png" alt="logo-election-nepal">
+
+            <!-- ----------------------------------marque------------------------ -->
+            <div id="marque-section">
+            <div class="news-container">
+                <div class="news-header">
+                    <div class="title">
+                        <i class="ri-news-line"></i>
+                        <p>ताजा अपडेटहरू</p>
+                        </div>
+                    <div class="news-marquee">
+                        <marquee behavior="scroll" direction="left">
+                            <a href="#">- नयाँ उम्मेदवारहरूको सूची</a>
+                            <a href="#">- मुख्य निर्वाचन अधिकृतको नियुक्ति सम्बन्धी आयोगको सूचना</a>
+                            <a href="#">- पछिल्लो वर्षको निर्वाचन परिणाम</a>
+                            <a href="#">- परिणामहरू आउँदा सूचित रहनुहोस्। अन्तिम परिणाम आउन समय लाग्न सक्छ।</a>
+                        </marquee>
+                    </div>
                 </div>
             </div>
-            <!-- --------------bottom-menu-nav-bar-------------- -->
-            <div id="bottom-nav" class="navs">
-                <div id="menus">
-                    <a href="./index.html"><i class="ri-home-3-line"></i></a>
-                    <a href="#">
-                        <h4>हाम्रो बारे</h4>
-                    </a>
-                    <a href="#">
-                        <h4>निर्वाचन कानून</h4>
-                    </a>
-                    <a href="#">
-                        <h4>मतदाता शिक्षा</h4>
-                    </a>
-                    <a href="#">
-                        <h4>राजनीतिक दल</h4>
-                    </a>
-                    <a href="#">
-                        <h4>प्रकाशन</h4>
-                    </a>
-                    <a href="#">
-                        <h4>पछिल्लो निर्वाचनहरु</h4>
-                    </a>
-                    <a href="#">
-                        <h4>राष्ट्रिय सभा सदस्य निर्वाचन
-                            २०८०</h4>
-                    </a>
-                    <a href="#">
-                        <h4>उपनिर्वाचन, २०८१</h4>
-                    </a>
-                </div>
+
+            <!-- -------------------hero-sections-------------------- -->
+            <div id="hero-sections">
+
             </div>
         </div>
-        <!-- -------------------hero-sections-------------------- -->
-        <div id="hero-sections">
-
-        </div>
-    </div>
-    <h1>under construction</h1>
-</body>
+        <h1>under construction</h1>
+    </body>
 
 </html>
