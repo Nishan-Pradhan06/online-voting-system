@@ -77,7 +77,7 @@ body {
 
 /* -------------------------bottom-nav---------------------- */
 #bottom-nav {
-    padding: 10px 250px;
+    padding: 10px 110px;
     background-color: #092770;
     top: 0;
     position: sticky;
@@ -135,7 +135,7 @@ body {
 }
 
 .news-header {
-    max-width: 1050px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -150,7 +150,7 @@ body {
     background-color: #f90026;
     font-size: 1rem;
     font-weight: 500;
-    padding: 5px 15px;
+    padding: 5px 10px;
     margin-right: 3px;
 }
 
@@ -180,8 +180,8 @@ marquee a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 120px;
-    height: 60vh;
+    padding: 10px 100px;
+    height: 70vh;
 }
 
 #left,
@@ -207,16 +207,49 @@ marquee a:hover {
 }
 
 /* ----------------------------------------how to vote-------------------------- */
-#location-container{
-    background-color:#ecf0f5 ;
-    padding: 10px 80px;
+
+
+/* -----------------------------footer------------------------- */
+#footer {
+    background-color: #092770;
+    padding: 10px 110px;
 }
-#menus-loc{
+#footer-top{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-#menus-loc a ,#menus-loc p  {
-    color: #5a5a5a;
+#footer-details,.footer-quick-links{
+    padding-top: 30px;
+}
+#logo img{
+    height: 50px;
+}
+#logo p{
+    padding: 6px 0;
+    color: #ffffff;
+}
+.footer-icons a{
+
+    color: #ffffff;
     text-decoration: none;
-    font-weight: 600;
+}
+.footer-icons .ri-facebook-fill,.footer-icons .ri-twitter-x-fill{
+    font-size: 20px;
+    padding: 0 20px;
+}
+.footer-h4
+{
+    color: #fff;
+    margin-bottom: 20px;
+}
+#footer-top a{
+    color: #fff;
+}
+hr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    height: 200px;
 }
