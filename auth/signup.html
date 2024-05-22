@@ -4,41 +4,47 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>मतदान</title>
+        <title>मतदान साइनअप</title>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="./auth.css">
     </head>
 
     <body>
         <div class="main-container">
-            <div class="login">
+            <div class="signup">
                 <div class="heading">
-                    <h1>मतदान अनलाइन लगइन</h1>
+                    <h1>मतदान अनलाइन साइनअप</h1>
                     <hr>
                 </div>
                 <div class="input">
                     <form action="post">
-                        <h4>Email</h4>
-                        <input type="email" name="email" id="user-email"
-                            placeholder="Enter Email Address">
+                        <h4>Voter Id</h4>
+                        <input type="number" name="number" id="voting-id"
+                            placeholder="Enter your voting number">
+                        <h4>Full Name</h4>
+                        <input type="name" name="name" id="user-name"
+                            placeholder="Enter your full name">
+                        <h4>Phone Number</h4>
+                        <input type="tel" name="phone-num" id="user-num"
+                            placeholder="Enter Phone Number">
                         <h4>Password</h4>
                         <input type="password" name="password"
-                            id="user-password" placeholder="Enter password ">
-                        <div class="check-box">
+                            id="user-password" placeholder="Create a new password ">
+                        <div class="check-box-signup">
                             <input type="checkbox" name="check" id="check-box">
-                            <p>Remember Password</p>
+                            <p>I accept the <span><a href>Term and
+                                        Conditions</a>&nbsp;&&nbsp;<a
+                                        href>Privacy Policy</a></span></p>
                         </div>
-                        <div class="forget-pass btns">
-                            <p><a href="#">Forget Password?</a></p>
-                            <div class="button">
-                                <button type="submit">Login</button>
-                            </div>
+
+                        <div class="signup-button">
+                            <button type="submit">Sign Up</button>
                         </div>
+
                     </form>
                 </div>
                 <div class="buttom">
                     <hr>
-                    <!-- <h1>मतदान अनलाइन लगइन</h1> -->
                 </div>
 
             </div>
@@ -47,12 +53,9 @@
             <p>Copyright &copy; 2024</p>
             <div class="footer-right">
                 <a href="#">Privacy Policy</a>
-                <a href="#">nishan</a>
                 <a href="#">Terms & Conditions</a>
-                <a href="#">details</a>
             </div>
         </footer>
-        <p>hello</p>
     </body>
 
 </html>

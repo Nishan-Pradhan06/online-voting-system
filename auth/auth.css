@@ -10,13 +10,14 @@ body {
 
 /* login page */
 .main-container {
-    height: 80vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.login {
+.login,
+.signup {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -46,7 +47,8 @@ body {
 
 input[type="tel"],
 input[type="password"],
-input[type="number"] {
+input[type="number"],
+input[type="name"] {
 
     width: 100%;
     padding: 10px;
@@ -54,6 +56,7 @@ input[type="number"] {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 /*  it disble the increment and decrement button from input number type */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -62,14 +65,25 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .check-box,
-.btns {
+.btns,
+.check-box-signup {
     display: flex;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 input[type="checkbox"] {
     margin-right: 10px;
+
+}
+
+.check-box-signup input[type="checkbox"] {
+    margin-top: -22px;
+
+}
+
+.check-box a {
+    color: #2C4E80;
 }
 
 .btns {
@@ -90,6 +104,12 @@ button[type="submit"] {
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
+}
+
+.signup-button {
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
 button[type="submit"]:hover {

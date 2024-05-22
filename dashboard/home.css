@@ -11,6 +11,11 @@
     top: 0;
 }
 
+#home-navbar {
+    z-index: 1000;
+    box-shadow: 0px 2px 4px #101f28;
+}
+
 #left-nav-container {
     gap: 16vh;
 }
@@ -35,14 +40,15 @@
     position: relative;
     cursor: pointer;
 }
-#body-menu h4{
+
+#body-menu h4 {
     color: #899197;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 40px;
+    top: 25px;
     right: 0;
     background-color: #ffffff;
     min-width: 200px;
@@ -60,6 +66,7 @@
 }
 
 .dropdown-content a:hover {
+    border-radius: 4px;
     background-color: #ddd;
 }
 
