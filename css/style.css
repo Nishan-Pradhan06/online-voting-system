@@ -28,20 +28,20 @@ body {
 
 .top-nav-btns {
     background-color: #ffffff;
-    border-radius: 6px;
+    border-radius: 0.375em;
     border: none;
-    padding: 10px 20px;
+    padding: 0.625em 1.25em;
     cursor: pointer;
 }
 
 .menu-social {
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 #right-button button {
     background-color: #ffffff;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 #top-nav button:hover {
@@ -66,7 +66,7 @@ body {
 
 #last-logo,
 #fist-logo {
-    width: 250px;
+    width: 15.625em;
 }
 
 #last-logo img,
@@ -87,7 +87,7 @@ body {
 }
 
 .ri-home-3-line {
-    font-size: 25px;
+    font-size: 1.563em;
     font-weight: 500;
 }
 
@@ -201,13 +201,13 @@ marquee a:hover {
 
 #right figure img {
     padding: 15px 20px;
-    height: 450px;
+    height: 60vh;
 }
 
 /* ----------------------------------------locations-------------------------- */
 #location-container {
     background-color: #ecf0f5;
-    padding: 10px 80px;
+    padding: 10px 130px;
 }
 
 #menus-loc {
@@ -264,6 +264,106 @@ marquee a:hover {
 
 .details a:hover {
     text-decoration: underline;
+}
+
+/* --------------------------------about-page------------------------------- */
+.about-section {
+    width: 100%;
+    max-width: 80rem;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 5vh;
+    margin: 0 auto;
+}
+
+.about-container img {
+    width: 50vh;
+}
+
+/* -------------------------------election-law-page------------------------- */
+.election-law-section {
+    width: 100%;
+    max-width: 65rem;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+}
+
+.election-law-container p {
+    padding: 10px 0;
+}
+
+.election-law-container li {
+    list-style: none;
+    margin: 5px 0;
+    padding: 5px 10px;
+}
+
+/* ---------------------------------canidates------------------------------ */
+#candidate-card-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 70rem;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+}
+
+.candidate-card-container {
+
+    height: 50vh;
+    max-width: 38vh;
+    background-color: #ecf0f5;
+    padding: 10px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.215);
+    margin: 0.5rem;
+}
+
+.candidate-card-container:hover {
+    transition: all 100ms ease-in;
+    box-shadow: 3px 3px 3px 2px rgba(5, 5, 5, 0.449);
+}
+
+.imgs,.details-post {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.cards .imgs img {
+    background-size: cover;
+    max-width: 30vh;
+    height: 30vh;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.215);
+    margin-bottom: 10px;
+}
+
+.candiate-details {
+    text-align: center;
+}
+
+.candiate-details .position {
+    display: flex;
+    align-items: center;
+    gap: 10vh;
+}
+
+.position img {
+    height: 45px;
+}
+#headings-title{
+    padding: 1rem 0;
+    text-align: center;
 }
 
 /* ----------------------------------faq----------------------------- */
