@@ -36,8 +36,10 @@
                             <li><a href="./home.html">Dashboard</a></li>
                             <li><a href="./profile.html">My Profile</a></li>
                             <li><a href="./candidates.html">Candidates</a></li>
-                            <li><a href="./vote-candidate.html">Vote Candidate</a></li>
-                            <li><a href="./record.html">Election History</a></li>
+                            <li><a href="./vote-candidate.html">Vote
+                                    Candidate</a></li>
+                            <li><a href="./record.html">Election
+                                    History</a></li>
                         </ul>
                     </div>
                 </div>
@@ -50,29 +52,76 @@
                             <p>निर्वाचन आयोग नेपाल, कान्तिपथ, काठमाण्डौ,
                                 नेपाल</p>
                         </div>
-                        <div id="election-status">
-
-                        </div>
-                        <div id="vote-status-container">
-                            <div id="heading">
-                                <i class="ri-bar-chart-box-line"></i>
-                                <h4>Vote Status</h4>
+                        <!-- ---------------card---------------- -->
+                        <section class="summary">
+                            <div class="card">
+                                <h2>Total Voted</h2>
+                                <p>4</p>
                             </div>
-                        </div>
+                            <div class="card">
+                                <h2>Rejected</h2>
+                                <p>1</p>
+                            </div>
+                            <div class="card">
+                                <h2>Upcoming Elections</h2>
+                                <p>2</p>
+                            </div>
+                        </section>
                     </div>
+
+                    <!-- ---------------------result-------------- -->
+                    <section id="vote-status-history">
+                        <div class="table">
+                            <div class="heading">
+                                <h4>Election Histroy</h4>
+                            </div>
+                            <table>
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Year</th>
+                                    <th>Post</th>
+                                    <th>Status</th>
+                                </tr>
+                                <tr>
+                                    <td>04:05:16 PM</td>
+                                    <td>Baishak, 2080</td>
+                                    <td>Mayor, Belbari-11-Laxmimarga</td>
+                                    <td class="status">Sucessful</td>
+                                </tr>
+                                <tr>
+                                    <td>04:05:16 PM</td>
+                                    <td>Baishak, 2080</td>
+                                    <td>Mayor, Belbari-11-Laxmimarga</td>
+                                    <td class="status">Sucessful</td>
+                                </tr>
+                                <tr>
+                                    <td>04:05:16 PM</td>
+                                    <td>Chaitra, 2075</td>
+                                    <td>Deputy Mayor, Belbari-11-Laxmimarga</td>
+                                    <td class="status">Sucessful</td>
+                                </tr>
+                                 <tr>
+                                    <td>04:05:16 PM</td>
+                                    <td>Chaitra, 2075</td>
+                                    <td>Mayor, Belbari-11-Laxmimarga</td>
+                                    <td class="status-reject">Rejected</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
 
                 </div>
             </div>
         </div>
-         <footer>
-                <div id="foot-er">
-                    <p>Copyright &copy; 2024</p>
-                    <div class="footer-right">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms & Conditions</a>
-                    </div>
+        <footer>
+            <div id="foot-er">
+                <p>Copyright &copy; 2024</p>
+                <div class="footer-right">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
                 </div>
+            </div>
 
-            </footer>
+        </footer>
     </body>
 </html>

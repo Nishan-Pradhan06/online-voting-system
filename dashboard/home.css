@@ -42,7 +42,7 @@
 }
 
 .das-left-nav h4 {
-    padding-left:10px ;
+    padding-left: 10px;
     color: #899197;
 }
 
@@ -91,6 +91,8 @@
 }
 
 #right-body {
+    max-width: 1300px;
+    padding: 10px 20px;
     width: 84vw;
     height: 100%;
 }
@@ -103,7 +105,6 @@
     list-style: none;
     font-size: 15px;
     padding: 10px 0;
-    /* background-color: red; */
 }
 
 #left-menus a {
@@ -116,21 +117,21 @@
     transition: all ease 600ms;
     color: #ffffff;
     font-weight: 600;
-    /* background-color: #28475C; */
 }
-
 
 #body-menu {
-    padding: 10px 20px;
     margin: 20px 0;
 }
-#body-menu h1{
+
+#body-menu h1 {
+    text-align: start;
     font-size: 25px;
 }
 
 #support-contact {
     padding: 10px 20px;
     background-color: #e9ecef;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.237);
     border-radius: 6px
 }
 
@@ -138,11 +139,6 @@
     color: #899197;
 }
 
-#vote-status-container {
-    background-color: #fff;
-    margin: 20px 0;
-    border-radius: 3px solid red;
-}
 
 #heading {
     display: flex;
@@ -150,13 +146,92 @@
     gap: 0.8vw;
 }
 
+/* -------------------card-main-body-dashboard----------------- */
+
+.summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* padding: 3 0; */
+    padding-top: 4vh;
+}
+
+.card {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 1vh 0;
+    text-align: center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.237);
+}
+
+.card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #4682A9;
+}
+
+.card p {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+/* -----------------------result-histroy---------------- */
+#vote-status-history {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 2vh 2vh;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.237);
+    margin-top: 30px;
+}
+
+.table .heading h4 {
+    margin-bottom: 1vh;
+    color: #333;
+    font-weight: bold;
+}
+
+table {
+    border: 2px solid #45555ca0;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #ffffff67;
+}
+
+table th,
+table td {
+    border: 1px solid #45555cba;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+ text-align: center;
+    color: #333;
+    font-weight: bold;
+    background-color:#4681a95d ;
+}
+table td{
+    text-align: center;
+    background-color: #89919783;
+}
+table .status{
+    background-color: #4caf4f92;
+    font-weight: 500;
+}
+table .status-reject{
+    background-color: #af544c92;
+    font-weight: 500;
+}
 
 /* ----------------------------------search-bar-selecion-menus------------------------ */
-#search-form{
+#search-form {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .search-card {
     padding: 10px;
     background-color: #f9f9f9;
