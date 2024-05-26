@@ -207,20 +207,23 @@ table td {
 }
 
 table th {
- text-align: center;
+    text-align: center;
     color: #333;
     font-weight: bold;
-    background-color:#4681a95d ;
+    background-color: #4681a95d;
 }
-table td{
+
+table td {
     text-align: center;
     background-color: #89919783;
 }
-table .status{
+
+table .status {
     background-color: #4caf4f92;
     font-weight: 500;
 }
-table .status-reject{
+
+table .status-reject {
     background-color: #af544c92;
     font-weight: 500;
 }
@@ -279,4 +282,82 @@ table .status-reject{
     text-decoration: none;
     padding: 10px;
     font-size: 14px;
+}
+
+
+/* ------------------------------vote-candidate------------------------- */
+.candidate-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.candidate-table th,
+.candidate-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.candidate-table img {
+    height: 8vh;
+}
+
+.candidate-table th {
+    background-color: #bcd1e0;
+}
+
+.candidate-table td {
+    background-color: #f9f9f9;
+}
+
+.candidate-table tr:hover td {
+    cursor: pointer;
+    background-color: #dbd5d56f;
+}
+
+.candidate-table input[type="radio"] {
+    margin-right: 10px;
+}
+
+#verifed-submit-container {
+    margin: 15px 0;
+}
+
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* margin-bottom: 20px; */
+    margin: 10px 0;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin: 0;
+}
+
+.checkbox-container label {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #101f28;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0e1720;
 }

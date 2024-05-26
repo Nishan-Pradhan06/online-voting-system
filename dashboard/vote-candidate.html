@@ -1,208 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>जनता पोर्टल</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="./home.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>जनता पोर्टल</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="./home.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+            rel="stylesheet" />
+    </head>
 
-<body>
-    <div id="home">
-        <div id="home-navbar">
-            <div id="left-nav-container">
-                <a href="../dashboard/home.html">
-                    <h2>मतदान</h2>
-                </a>
-                <button><i class="ri-menu-line das-nav-menu"></i></button>
-            </div>
-            <div id="right-nav-container">
-                <div id="user">
-                    <i class="ri-user-3-line das-nav-menu"></i>
-                    <i class="ri-arrow-drop-down-line"></i>
+    <body>
+        <div id="home">
+            <div id="home-navbar">
+                <div id="left-nav-container">
+                    <a href="../dashboard/home.html">
+                        <h2>मतदान</h2>
+                    </a>
+                    <button><i class="ri-menu-line das-nav-menu"></i></button>
                 </div>
-                <div class="dropdown-content">
-                    <a href="../auth/login.html">Logout</a>
-                    <a href="#">Change Password</a>
-                </div>
-            </div>
-        </div>
-        <div id="das-body">
-            <div id="left-body">
-                <div id="body-menu" class="das-left-nav">
-                    <h4>Main Navigation</h4>
-                    <ul id="left-menus">
-                        <li><a href="./home.html">Dashboard</a></li>
-                        <li><a href="./profile.html">My Profile</a></li>
-                        <li><a href="./candidates.html">Candidates</a></li>
-                        <li><a href="./vote-candidate.html">Vote
-                                Candidate</a></li>
-                        <li><a href="./record.html">Election
-                                History</a></li>
-                    </ul>
+                <div id="right-nav-container">
+                    <div id="user">
+                        <i class="ri-user-3-line das-nav-menu"></i>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="../auth/login.html">Logout</a>
+                        <a href="#">Change Password</a>
+                    </div>
                 </div>
             </div>
-            <div id="right-body">
-                <div id="body-menu">
-                    <h1>Vote for Your Favourite Candidates</h1>
-                    <div id="search-form">
-                        <div id="district" class="search-card">
-                            <h4>Districts</h4>
-                            <select name="district" id="district" disabled>
-                                <option value>Select District</option>
-                                <option value="Achham">Achham</option>
-                                <option value="Arghakhanchi">Arghakhanchi</option>
-                                <option value="Baglung">Baglung</option>
-                                <option value="Baitadi">Baitadi</option>
-                                <option value="Bajhang">Bajhang</option>
-                                <option value="Bajura">Bajura</option>
-                                <option value="Banke">Banke</option>
-                                <option value="Bara">Bara</option>
-                                <option value="Bardiya">Bardiya</option>
-                                <option value="Bhaktapur">Bhaktapur</option>
-                                <option value="Bhojpur">Bhojpur</option>
-                                <option value="Chitwan">Chitwan</option>
-                                <option value="Dadeldhura">Dadeldhura</option>
-                                <option value="Dailekh">Dailekh</option>
-                                <option value="Dang">Dang</option>
-                                <option value="Darchula">Darchula</option>
-                                <option value="Dhading">Dhading</option>
-                                <option value="Dhankuta">Dhankuta</option>
-                                <option value="Dhanusha">Dhanusha</option>
-                                <option value="Dolakha">Dolakha</option>
-                                <option value="Dolpa">Dolpa</option>
-                                <option value="Doti">Doti</option>
-                                <option value="Eastern Rukum">Eastern
-                                    Rukum</option>
-                                <option value="Gorkha">Gorkha</option>
-                                <option value="Gulmi">Gulmi</option>
-                                <option value="Humla">Humla</option>
-                                <option value="Ilam">Ilam</option>
-                                <option value="Jajarkot">Jajarkot</option>
-                                <option value="Jhapa">Jhapa</option>
-                                <option value="Jumla">Jumla</option>
-                                <option value="Kailali">Kailali</option>
-                                <option value="Kalikot">Kalikot</option>
-                                <option value="Kanchanpur">Kanchanpur</option>
-                                <option value="Kapilvastu">Kapilvastu</option>
-                                <option value="Kaski">Kaski</option>
-                                <option value="Kathmandu">Kathmandu</option>
-                                <option value="Kavrepalanchok">Kavrepalanchok</option>
-                                <option value="Khotang">Khotang</option>
-                                <option value="Lalitpur">Lalitpur</option>
-                                <option value="Lamjung">Lamjung</option>
-                                <option value="Mahottari">Mahottari</option>
-                                <option value="Makwanpur">Makwanpur</option>
-                                <option value="Manang">Manang</option>
-                                <option value="Morang" selected>Morang</option>
-                                <option value="Mugu">Mugu</option>
-                                <option value="Mustang">Mustang</option>
-                                <option value="Myagdi">Myagdi</option>
-                                <option value="Nawalpur">Nawalpur</option>
-                                <option value="Nuwakot">Nuwakot</option>
-                                <option value="Okhaldhunga">Okhaldhunga</option>
-                                <option value="Palpa">Palpa</option>
-                                <option value="Panchthar">Panchthar</option>
-                                <option value="Parasi">Parasi</option>
-                                <option value="Parsa">Parsa</option>
-                                <option value="Pyuthan">Pyuthan</option>
-                                <option value="Ramechhap">Ramechhap</option>
-                                <option value="Rasuwa">Rasuwa</option>
-                                <option value="Rautahat">Rautahat</option>
-                                <option value="Rolpa">Rolpa</option>
-                                <option value="Rupandehi">Rupandehi</option>
-                                <option value="Sankhuwasabha">Sankhuwasabha</option>
-                                <option value="Saptari">Saptari</option>
-                                <option value="Sarlahi">Sarlahi</option>
-                                <option value="Sindhuli">Sindhuli</option>
-                                <option value="Sindhupalchok">Sindhupalchok</option>
-                                <option value="Siraha">Siraha</option>
-                                <option value="Solukhumbu">Solukhumbu</option>
-                                <option value="Sunsari">Sunsari</option>
-                                <option value="Surkhet">Surkhet</option>
-                                <option value="Syangja">Syangja</option>
-                                <option value="Tanahun">Tanahun</option>
-                                <option value="Taplejung">Taplejung</option>
-                                <option value="Terhathum">Terhathum</option>
-                                <option value="Udayapur">Udayapur</option>
-                                <option value="Western Rukum">Western
-                                    Rukum</option>
-                                <option value="Bajura">Bajura</option>
-                                <option value="Darchula">Darchula</option>
-                            </select>
+            <div id="das-body">
+                <div id="left-body">
+                    <div id="body-menu" class="das-left-nav">
+                        <h4>Main Navigation</h4>
+                        <ul id="left-menus">
+                            <li><a href="./home.html">Dashboard</a></li>
+                            <li><a href="./profile.html">My Profile</a></li>
+                            <li><a href="./candidates.html">Candidates</a></li>
+                            <li><a href="./vote-candidate.html">Vote
+                                    Candidate</a></li>
+                            <li><a href="./record.html">Election
+                                    History</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="right-body">
+                    <div id="body-menu">
+                        <h1>Vote for Your Favourite Candidates</h1>
+                        <div id="search-form">
+                            <div id="district" class="search-card">
+                                <h4>Districts</h4>
+                                <select name="district" id="district" disabled>
+                                    <option value>Select District</option>
+                                    <option value="Achham">Achham</option>
+                                    <option
+                                        value="Arghakhanchi">Arghakhanchi</option>
+                                    <option value="Baglung">Baglung</option>
+                                    <option value="Baitadi">Baitadi</option>
+                                    <option value="Bajhang">Bajhang</option>
+                                    <option value="Bajura">Bajura</option>
+                                    <option value="Banke">Banke</option>
+                                    <option value="Bara">Bara</option>
+                                    <option value="Bardiya">Bardiya</option>
+                                    <option value="Bhaktapur">Bhaktapur</option>
+                                    <option value="Bhojpur">Bhojpur</option>
+                                    <option value="Chitwan">Chitwan</option>
+                                    <option
+                                        value="Dadeldhura">Dadeldhura</option>
+                                    <option value="Dailekh">Dailekh</option>
+                                    <option value="Dang">Dang</option>
+                                    <option value="Darchula">Darchula</option>
+                                    <option value="Dhading">Dhading</option>
+                                    <option value="Dhankuta">Dhankuta</option>
+                                    <option value="Dhanusha">Dhanusha</option>
+                                    <option value="Dolakha">Dolakha</option>
+                                    <option value="Dolpa">Dolpa</option>
+                                    <option value="Doti">Doti</option>
+                                    <option value="Eastern Rukum">Eastern
+                                        Rukum</option>
+                                    <option value="Gorkha">Gorkha</option>
+                                    <option value="Gulmi">Gulmi</option>
+                                    <option value="Humla">Humla</option>
+                                    <option value="Ilam">Ilam</option>
+                                    <option value="Jajarkot">Jajarkot</option>
+                                    <option value="Jhapa">Jhapa</option>
+                                    <option value="Jumla">Jumla</option>
+                                    <option value="Kailali">Kailali</option>
+                                    <option value="Kalikot">Kalikot</option>
+                                    <option
+                                        value="Kanchanpur">Kanchanpur</option>
+                                    <option
+                                        value="Kapilvastu">Kapilvastu</option>
+                                    <option value="Kaski">Kaski</option>
+                                    <option value="Kathmandu">Kathmandu</option>
+                                    <option
+                                        value="Kavrepalanchok">Kavrepalanchok</option>
+                                    <option value="Khotang">Khotang</option>
+                                    <option value="Lalitpur">Lalitpur</option>
+                                    <option value="Lamjung">Lamjung</option>
+                                    <option value="Mahottari">Mahottari</option>
+                                    <option value="Makwanpur">Makwanpur</option>
+                                    <option value="Manang">Manang</option>
+                                    <option value="Morang"
+                                        selected>Morang</option>
+                                    <option value="Mugu">Mugu</option>
+                                    <option value="Mustang">Mustang</option>
+                                    <option value="Myagdi">Myagdi</option>
+                                    <option value="Nawalpur">Nawalpur</option>
+                                    <option value="Nuwakot">Nuwakot</option>
+                                    <option
+                                        value="Okhaldhunga">Okhaldhunga</option>
+                                    <option value="Palpa">Palpa</option>
+                                    <option value="Panchthar">Panchthar</option>
+                                    <option value="Parasi">Parasi</option>
+                                    <option value="Parsa">Parsa</option>
+                                    <option value="Pyuthan">Pyuthan</option>
+                                    <option value="Ramechhap">Ramechhap</option>
+                                    <option value="Rasuwa">Rasuwa</option>
+                                    <option value="Rautahat">Rautahat</option>
+                                    <option value="Rolpa">Rolpa</option>
+                                    <option value="Rupandehi">Rupandehi</option>
+                                    <option
+                                        value="Sankhuwasabha">Sankhuwasabha</option>
+                                    <option value="Saptari">Saptari</option>
+                                    <option value="Sarlahi">Sarlahi</option>
+                                    <option value="Sindhuli">Sindhuli</option>
+                                    <option
+                                        value="Sindhupalchok">Sindhupalchok</option>
+                                    <option value="Siraha">Siraha</option>
+                                    <option
+                                        value="Solukhumbu">Solukhumbu</option>
+                                    <option value="Sunsari">Sunsari</option>
+                                    <option value="Surkhet">Surkhet</option>
+                                    <option value="Syangja">Syangja</option>
+                                    <option value="Tanahun">Tanahun</option>
+                                    <option value="Taplejung">Taplejung</option>
+                                    <option value="Terhathum">Terhathum</option>
+                                    <option value="Udayapur">Udayapur</option>
+                                    <option value="Western Rukum">Western
+                                        Rukum</option>
+                                    <option value="Bajura">Bajura</option>
+                                    <option value="Darchula">Darchula</option>
+                                </select>
 
+                            </div>
+                            <div id="ward" class="search-card">
+                                <h4>Municipality</h4>
+                                <select name="municipality"
+                                    id="municipality-select" disabled>
+                                    <option value>Select Municipality</option>
+                                    <optgroup label="Municipalities">
+                                        <option
+                                            value="Biratnagar Metropolitan City">Biratnagar
+                                            Metropolitan City</option>
+                                        <option value="Belbari Municipality"
+                                            selected>Belbari
+                                            Municipality</option>
+                                        <option
+                                            value="Rangeli Municipality">Rangeli
+                                            Municipality</option>
+                                        <option
+                                            value="Ratuwamai Municipality">Ratuwamai
+                                            Municipality</option>
+                                        <option
+                                            value="Sunwarshi Municipality">Sunwarshi
+                                            Municipality</option>
+                                        <option
+                                            value="Urlabari Municipality">Urlabari
+                                            Municipality</option>
+                                        <option
+                                            value="Letang Municipality">Letang
+                                            Municipality</option>
+                                        <option
+                                            value="Pathari Sanischare Municipality">Pathari
+                                            Sanischare Municipality</option>
+                                        <option
+                                            value="Sundarharaicha Municipality">Sundarharaicha
+                                            Municipality</option>
+                                    </optgroup>
+                                    <optgroup label="Rural Municipalities">
+                                        <option
+                                            value="Budhiganga Rural Municipality">Budhiganga
+                                            Rural Municipality</option>
+                                        <option
+                                            value="Dhanpalthan Rural Municipality">Dhanpalthan
+                                            Rural Municipality</option>
+                                        <option
+                                            value="Gramthan Rural Municipality">Gramthan
+                                            Rural Municipality</option>
+                                        <option
+                                            value="Jahada Rural Municipality">Jahada
+                                            Rural Municipality</option>
+                                        <option
+                                            value="Kerabari Rural Municipality">Kerabari
+                                            Rural Municipality</option>
+                                        <option
+                                            value="Miklajung Rural Municipality">Miklajung
+                                            Rural Municipality</option>
+                                        <option
+                                            value="Kanepokhari Rural Municipality">Kanepokhari
+                                            Rural Municipality</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div id="position" class="search-card">
+                                <h4>Positions</h4>
+                                <select name="posotion" id="position-select">
+                                    <option value="1">Select Position</option>
+                                    <option value="100">Mayor</option>
+                                    <option value="200">Deputy Mayor</option>
+                                    <option value="300">City Council
+                                        Member</option>
+                                    <option value="400">City Treasurer</option>
+                                </select>
+                            </div>
                         </div>
-                        <div id="ward" class="search-card">
-                            <h4>Municipality</h4>
-                            <select name="municipality" id="municipality-select" disabled>
-                                <option value>Select Municipality</option>
-                                <optgroup label="Municipalities">
-                                    <option value="Biratnagar Metropolitan City">Biratnagar
-                                        Metropolitan City</option>
-                                    <option value="Belbari Municipality" selected>Belbari
-                                        Municipality</option>
-                                    <option value="Rangeli Municipality">Rangeli
-                                        Municipality</option>
-                                    <option value="Ratuwamai Municipality">Ratuwamai
-                                        Municipality</option>
-                                    <option value="Sunwarshi Municipality">Sunwarshi
-                                        Municipality</option>
-                                    <option value="Urlabari Municipality">Urlabari
-                                        Municipality</option>
-                                    <option value="Letang Municipality">Letang
-                                        Municipality</option>
-                                    <option value="Pathari Sanischare Municipality">Pathari
-                                        Sanischare Municipality</option>
-                                    <option value="Sundarharaicha Municipality">Sundarharaicha
-                                        Municipality</option>
-                                </optgroup>
-                                <optgroup label="Rural Municipalities">
-                                    <option value="Budhiganga Rural Municipality">Budhiganga
-                                        Rural Municipality</option>
-                                    <option value="Dhanpalthan Rural Municipality">Dhanpalthan
-                                        Rural Municipality</option>
-                                    <option value="Gramthan Rural Municipality">Gramthan
-                                        Rural Municipality</option>
-                                    <option value="Jahada Rural Municipality">Jahada
-                                        Rural Municipality</option>
-                                    <option value="Kerabari Rural Municipality">Kerabari
-                                        Rural Municipality</option>
-                                    <option value="Miklajung Rural Municipality">Miklajung
-                                        Rural Municipality</option>
-                                    <option value="Kanepokhari Rural Municipality">Kanepokhari
-                                        Rural Municipality</option>
-                                </optgroup>
-                            </select>
-                        </div>
-                        <div id="position" class="search-card">
-                            <h4>Positions</h4>
-                            <select name="posotion" id="position-select">
-                                <option value="1">Select Position</option>
-                                <option value="100">Mayor</option>
-                                <option value="200">Deputy Mayor</option>
-                                <option value="300">City Council
-                                    Member</option>
-                                <option value="400">City Treasurer</option>
-                            </select>
-                        </div>
+                        <section id="select-candidate-section">
+                            <table class="candidate-table">
+                                <thead>
+                                    <tr>
+                                        <th>Select</th>
+                                        <th>Candidate Name</th>
+                                        <th>Party</th>
+                                        <th>Post</th>
+                                        <th>Election Symbol</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="radio" name="candidate"
+                                                id="balen"></td>
+                                        <td><label for="balen"><strong>Balen
+                                                    Shah</strong></label></td>
+                                        <td><label
+                                                for="balen"><strong>Independent</strong></label></td>
+                                        <td><label
+                                                for="balen"><strong>Mayor</strong></label></td>
+                                        <td><img
+                                                src="../assets/candidate/BalenShah_20220430130800.png"
+                                                alt="election-logo"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="radio" name="candidate"
+                                                id="pradhan"></td>
+                                        <td><label
+                                                for="pradhan"><strong>Pradhan</strong></label></td>
+                                        <td><label
+                                                for="pradhan"><strong>Independent</strong></label></td>
+                                        <td><label
+                                                for="pradhan"><strong>Mayor</strong></label></td>
+                                        <td><img
+                                                src="../assets/candidate/BalenShah_20220430130800.png"
+                                                alt="election-logo"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="radio" name="candidate"
+                                                id="nishan"></td>
+                                        <td><label for="nishan"><strong>Nishan
+                                                    Pradhan</strong></label></td>
+                                        <td><label
+                                                for="nishan"><strong>Independent</strong></label></td>
+                                        <td><label
+                                                for="nishan"><strong>Mayor</strong></label></td>
+                                        <td><img
+                                                src="../assets/candidate/BalenShah_20220430130800.png"
+                                                alt="election-logo"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+
+                        <section id="verified-submit-container">
+                            <div class="checkbox-container">
+                                <input type="checkbox" name="check" id="check"
+                                    required>
+                                <label for="check">I have selected the
+                                    candidates</label>
+                            </div>
+                            <button class="btn btn-primary" id="submit">Submit
+                                Vote</button>
+                        </section>
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer>
-        <div id="foot-er">
-            <p>Copyright &copy; 2024</p>
-            <div class="footer-right">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
+        <footer>
+            <div id="foot-er">
+                <p>Copyright &copy; 2024</p>
+                <div class="footer-right">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
             </div>
-        </div>
 
-    </footer>
-</body>
+        </footer>
+    </body>
 
 </html>
