@@ -361,3 +361,65 @@ table .status-reject {
 .btn-primary:hover {
     background-color: #0e1720;
 }
+
+/* -----------------------------my-profile-page------------------------------ */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.upload-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.upload-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.upload-section input[type="file"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.input-field {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.input-field label {
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.input-field input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    flex: 1;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
