@@ -1,4 +1,4 @@
-## voting online site
+## Online Voting System
 # landing-page
 ![alt text](image.png)
 
