@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>मतदान लगइन</title>
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="./auth.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/auth.css">
     </head>
 
     <body>
@@ -19,14 +19,16 @@
                 <div class="input">
                     <form action="../dashboard/home.html">
                         <h4>Voter Id</h4>
-                        <input type="number" name="voder-id" id="voder-id"
-                            placeholder="Enter Voter id">
+                        <input type="number" name="voter-id" id="voter-id"
+                            placeholder="Enter Voter id"
+                            autocomplete="username">
                         <h4>Phone Number</h4>
                         <input type="tel" name="phone-num" id="user-num"
                             placeholder="Enter Phone Number">
                         <h4>Password</h4>
                         <input type="password" name="password"
-                            id="user-password" placeholder="Enter password ">
+                            id="user-password" placeholder="Enter password"
+                            autocomplete="current-password">
                         <div class="check-box">
                             <input type="checkbox" name="check" id="check-box">
                             <p>Remember Password</p>
@@ -38,6 +40,7 @@
                             </div>
                         </div>
                     </form>
+
                 </div>
                 <div class="buttom">
                     <hr>
