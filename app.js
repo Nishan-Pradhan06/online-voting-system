@@ -1,6 +1,6 @@
 // Import the required modules
 const express = require("express");
-const { homePage, loginPage } = require("./controller/online_voting_controller");
+const { homePage, loginPage, voterHomePage } = require("./controller/online_voting_controller");
 const app = express();
 const port = 3000;
 
@@ -10,10 +10,19 @@ app.set('view engine', 'ejs');
 // Serve static files from the "public" directory
 app.use(express.static("public/"));
 
-// Define the route for the homepage and map it to the controller function
+// landing Page
 app.get('/', homePage);
-// Define the route for the loginPage and map it to the controller function
+
+// Login page
 app.get('/auth/login', loginPage);
+
+//Voter Home Page
+app.get('/dashboard/voters/home', voterHomePage);
+
+
+app.get("/testing", (req, res) => {
+    res.render("testing");
+})
 
 // Start the server and listen on the specified port
 app.listen(port, function () {

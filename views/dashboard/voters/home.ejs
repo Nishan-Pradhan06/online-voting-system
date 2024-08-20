@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>जनता पोर्टल</title>
+        <link rel="stylesheet" href="../../css/styles.css">
+        <link rel="stylesheet" href="../../css/dashboard.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <div id="home">
+            <div id="home-navbar">
+                <div id="left-nav-container">
+                    <a href="/dashboard/voters/home"><h2>मतदान</h2></a>
+                    <button><i class="ri-menu-line das-nav-menu"></i></button>
+                </div>
+                <div id="right-nav-container">
+                    <div id="user">
+                        <i class="ri-user-3-line das-nav-menu"></i>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="../auth/login.html">Logout</a>
+                        <a href="#">Change Password</a>
+                    </div>
+                </div>
+            </div>
+            <div id="das-body">
+                <div id="left-body">
+                    <div id="body-menu" class="das-left-nav">
+                        <h4>Main Navigation</h4>
+                        <ul id="left-menus">
+                            <li><a href="./home.html">Dashboard</a></li>
+                            <li><a href="./profile.html">My Profile</a></li>
+                            <li><a href="./candidates.html">Candidates</a></li>
+                            <li><a href="./vote-candidate.html">Vote
+                                    Candidate</a></li>
+                            <li><a href="./record.html">Election
+                                    History</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="right-body">
+                    <div id="body-menu">
+                        <h1>Dashboard</h1>
+                        <div id="support-contact">
+                            <p>सहयोगका लागी उल्लेखित नम्बरमा सम्पर्क गर्नुहोला :
+                                4330358; 4333980</p>
+                            <p>निर्वाचन आयोग नेपाल, कान्तिपथ, काठमाण्डौ,
+                                नेपाल</p>
+                        </div>
+                        <!-- ---------------card---------------- -->
+                        <section class="summary">
+                            <div class="card">
+                                <h2>Total Voted</h2>
+                                <p>4</p>
+                            </div>
+                            <div class="card">
+                                <h2>Rejected</h2>
+                                <p>1</p>
+                            </div>
+                            <div class="card">
+                                <h2>Upcoming Elections</h2>
+                                <p>2</p>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- ---------------------result-------------- -->
+                    <section id="vote-status-history">
+                        <div class="table">
+                            <div class="heading">
+                                <h4>Election Histroy</h4>
+                            </div>
+                            <table>
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Year</th>
+                                    <th>Post</th>
+                                    <th>Status</th>
+                                </tr>
+                                <tr>
+                                    <td>04:05:16 PM</td>
+                                    <td>Baishak, 2080</td>
+                                    <td>Mayor, Belbari-11-Laxmimarga</td>
+                                    <td class="status">Sucessful</td>
+                                </tr>
+                                <tr>
+                                    <td>04:05:16 PM</td>
+                                    <td>Baishak, 2080</td>
+                                    <td>Mayor, Belbari-11-Laxmimarga</td>
+                                    <td class="status">Sucessful</td>
+                                </tr>
+                                <tr>
+                                    <td>04:05:16 PM</td>
+                                    <td>Chaitra, 2075</td>
+                                    <td>Deputy Mayor, Belbari-11-Laxmimarga</td>
+                                    <td class="status">Sucessful</td>
+                                </tr>
+                                <tr>
+                                    <td>04:05:16 PM</td>
+                                    <td>Chaitra, 2075</td>
+                                    <td>Mayor, Belbari-11-Laxmimarga</td>
+                                    <td class="status-reject">Rejected</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="foot-er">
+                <p>Copyright &copy; 2024</p>
+                <div class="footer-right">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+
+        </footer>
+    </body>
+</html>
