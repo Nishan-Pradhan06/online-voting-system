@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
 import NewsMarquee from '../components/NewsMarquee';
 import Footer from '../components/Footer';
 
@@ -7,10 +6,7 @@ const Home = () => {
     return (
         <>
             <div id="wrapper">
-                <NavBar />
-                {/* Marquee section */}
                 <NewsMarquee />
-                {/* Hero section */}
                 <div id="hero-sections">
                     <div id="left">
                         <h1>मतदाताहरूलाई सशक्त पार्दै,<br /> प्रजातन्त्रलाई सुदृढ बनाउँदै,</h1>
@@ -31,12 +27,10 @@ const Home = () => {
                     </div>
                     <div id="right">
                         <figure>
-                            <img src="/assets/thumb.jpeg" alt="election-img" />
+                            <img src="./assets/thumb.jpeg" alt="election-img" />
                         </figure>
                     </div>
                 </div>
-
-                {/* Footer */}
                 <Footer />
             </div>
         </>

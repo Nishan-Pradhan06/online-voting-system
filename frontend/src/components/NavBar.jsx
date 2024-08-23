@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 
 const NavBar = () => {
     return (
@@ -18,12 +19,12 @@ const NavBar = () => {
                     </a>
                 </div>
                 <div id="right-button">
-                    <a href="../auth/login.html">
+                    <Link to="/register">
                         <button className="top-nav-btns">Register</button>
-                    </a>
-                    <a href="/auth/login">
+                    </Link>
+                    <Link to="/login">
                         <button className="top-nav-btns">Login</button>
-                    </a>
+                    </Link>
                 </div>
             </div>
 
@@ -44,16 +45,16 @@ const NavBar = () => {
             {/* Bottom-menu-nav-bar */}
             <div id="bottom-nav" className="navs">
                 <div id="menus">
-                    <a href="./index.html"><i className="ri-home-3-line"></i></a>
-                    <a href="./pages/about.html"><h4>हाम्रो बारे</h4></a>
-                    <a href="./pages/election-law.html"><h4>निर्वाचन कानून</h4></a>
-                    <a href="./pages/how-to-vote.html"><h4>मतदान गर्ने तरिका</h4></a>
-                    <a href="./pages/candidates.html"><h4>नयाँ उम्मेदवारको बारे</h4></a>
-                    <a href="./pages/faq.html"><h4>सोधिने प्रश्नहरू (FAQ)</h4></a>
+                    <Link to="/"><i className="ri-home-3-line"></i></Link>
+                    <Link to="/about"><h4>हाम्रो बारे</h4></Link>
+                    <Link to="/election-law"><h4>निर्वाचन कानून</h4></Link>
+                    <Link to="/how-to-vote"><h4>मतदान गर्ने तरिका</h4></Link>
+                    <Link to="/candidates"><h4>नयाँ उम्मेदवारको बारे</h4></Link>
+                    <Link to="/faq"><h4>सोधिने प्रश्नहरू (FAQ)</h4></Link>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default NavBar
+export default NavBar;
