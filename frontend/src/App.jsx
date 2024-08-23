@@ -7,6 +7,8 @@ import Candidates from './pages/Candidates';
 import ElectionLaw from './pages/ElectionLaw';
 import Faq from './pages/Faq';
 import HowToVote from './pages/HowToVote';
+import Login from './auth/Login';
+import Signup from './auth/Signup';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path='/election-law' element={<ElectionLaw />} />
         <Route path='/faq' element={<Faq />} />
         <Route path='/how-to-vote' element={<HowToVote />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );
