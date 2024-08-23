@@ -16,6 +16,7 @@
   background-color: #ffffff;
   border-radius: 0.375em;
   border: none;
+  margin: 0.2rem;
   padding: 0.625em 1.25em;
   cursor: pointer;
 }

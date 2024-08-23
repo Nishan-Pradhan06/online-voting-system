@@ -1,11 +1,13 @@
 import React from 'react';
 import NewsMarquee from '../components/NewsMarquee';
+import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 
 const Home = () => {
     return (
         <>
             <div id="wrapper">
+                <NavBar />
                 <NewsMarquee />
                 <div id="hero-sections">
                     <div id="left">
